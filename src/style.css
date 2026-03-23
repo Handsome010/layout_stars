@@ -1,31 +1,13 @@
 /* add styles here */
+@import './wrapper.css';
+@import './stars.css';
+@import './stars__star.css';
+
 body {
   margin: 0;
 }
 
-.wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-}
 
-.stars {
-  display: flex;
-}
-
-.stars__star {
-  display: block;
-  height: 16px;
-  width: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(images/star.svg);
-}
-
-.stars__star:not(:last-child) {
-  margin-right: 4px;
-}
 
 .stars--1 .stars__star:nth-child(-n + 1) {
   background-image: url(images/star-active.svg);
